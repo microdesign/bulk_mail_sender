@@ -1,0 +1,12 @@
+app:
+    resource: "@AppBundle/Controller/Web"
+    type:     annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+emails:
+    type:     rest
+    defaults: {_format: json}
+    prefix:   /api
+    resource: AppBundle\Controller\Api\RestController
